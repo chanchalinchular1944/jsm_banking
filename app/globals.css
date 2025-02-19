@@ -155,33 +155,25 @@
 
   /* Right sidebar */
   .right-sidebar {
-    @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-200 xl:flex w-[355px] xl:overflow-y-scroll !important;
+    @apply no-scrollbar hidden h-screen max-h-screen flex-col border-l border-gray-200 xl:flex w-[400px] xl:overflow-y-scroll;
   }
 
   .profile-banner {
-    @apply h-[120px] w-full bg-gradient-mesh bg-cover bg-no-repeat;
+    @apply h-[120px] w-full bg-gradient-mesh bg-cover bg-no-repeat relative;
   }
-
-  .profile {
-    @apply relative flex px-6 max-xl:justify-center;
+  .profile-banner {
+    @apply h-[120px] w-full bg-gradient-mesh bg-cover bg-no-repeat relative;
   }
-
-  .profile-img {
-    @apply flex-center absolute -top-8 size-24 rounded-full bg-gray-100 border-8 border-white p-2 shadow-profile;
-  }
-
-  .profile-details {
-    @apply flex flex-col pt-24;
-  }
-
   .profile-name {
     @apply text-24 font-semibold text-gray-900;
   }
-
-  .profile-email {
-    @apply text-16 font-normal text-gray-600;
+  .profile-img {
+    @apply flex items-center justify-center size-24 rounded-full bg-gray-100 border-8 border-white p-2 shadow-profile absolute left-4 -top-12;
   }
-
+  
+  .profile-email {
+    @apply text-gray-500 text-sm;
+  }
   .banks {
     @apply flex flex-col justify-between gap-8 px-6 py-8;
   }
